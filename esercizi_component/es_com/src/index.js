@@ -1,17 +1,24 @@
-import react from "react";
+import React from "react";
 import ReactDom from "react-dom";
+import { Hello } from "./Message.js";
 
-const hello = (
+
+
+
+const Day = (
   <div>
-    <h1> Hello World </h1>
     <p> What a beautiful day </p>
+    <Hello/>
+    
   </div>
 );
 
-class App extends react.Component {
+class App extends React.Component {
   render() {
-    return hello;
+    return Day;
   }
 }
+
+
 
 ReactDom.render(<App />, document.getElementById("root"));
