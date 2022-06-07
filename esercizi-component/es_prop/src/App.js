@@ -1,7 +1,7 @@
 
 import React from "react";
 import Welcome from "./Welcome";
-const Name = "Giovanni"
+const Name = <strong>Giovanni</strong>
 class App extends React.Component {
 
     render() {
