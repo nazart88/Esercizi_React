@@ -1,15 +1,15 @@
 import react from 'react';
-
 class ClickCounter extends react.Component {
 
     state = {
 
-        count: 0
+        name: ''
     }
 
-  buttonIncrement = () => {
+  buttonIncrement = (event) => {
+        console.log(event)
         this.setState((state) => {
-            return { count: state.count + 1 }
+            return { name: event.target.innerText }
         })
 
     }
@@ -17,8 +17,11 @@ class ClickCounter extends react.Component {
     render() {
         return (
             <div>
-                <h1> Count: {this.state.count}</h1>
-                <button onClick={this.buttonIncrement}>Click</button>
+                <h1> Last Button: {this.state.name}</h1>
+                <button name="click" onClick={this.buttonIncrement}>Click</button>
+                <button name="oneMoreTime" onClick={this.buttonIncrement}>OneMoreTime</button>
+                <button name="pleaseDonTStop" onClick={this.buttonIncrement}>please don't stop</button>
+
             </div>
         )
     }
