@@ -1,11 +1,11 @@
-import Counter from './Counter';
+import ClickCounter from './ClickCounter';
 
 function App() {
   return (
     <div>
-      <Counter />
-    </div>
+      <ClickCounter />
+      </div>
   );
 }
 
-export default App;
+export default App
