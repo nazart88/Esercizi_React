@@ -1,4 +1,5 @@
 import React from "react"
+import CounterDisplay from "./CounterDisplay";
 
 class Clock extends React.Component {
 
@@ -16,7 +17,7 @@ class Clock extends React.Component {
     }
 
     render() {
-        return <h1>Clock: {this.state.clock}</h1>
+        return <CounterDisplay clock={this.state.clock} />
     }
 	
 
